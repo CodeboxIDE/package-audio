@@ -1,0 +1,21 @@
+{
+    "name": "audio",
+    "version": "0.0.0",
+    "description": "Play audio files",
+    "browser": "./src/index.js",
+    "engines": {
+        "codebox": ">=1.0.0"
+    },
+    "packageDependencies": {
+        "tabs": "CodeboxIDE/package-tabs"
+    },
+    "browserify": {
+        "transform": [
+            [
+                "stringify", {
+                    "extensions": [".html"]
+                }
+            ]
+        ]
+    }
+}

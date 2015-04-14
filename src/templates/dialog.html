@@ -1,0 +1,15 @@
+<div class="component-audio-player">
+    <div class="dialog-body">
+        <audio controls>
+            <source src="<%- options.file.accessUrl() %>" type="<%- options.file.get("mime") %>">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="dialog-actions">
+        <div class="row">
+            <div class="col-100">
+                <button class="button-block do-confirm">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
