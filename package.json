@@ -8,5 +8,17 @@
     },
     "packageDependencies": {
         "tabs": "CodeboxIDE/package-tabs"
+    },
+    "dependencies": {
+        "stringify": "3.1.0"
+    },
+    "browserify": {
+        "transform": [
+            [
+                "stringify", {
+                    "extensions": [".md", ".html"]
+                }
+            ]
+        ]
     }
 }
